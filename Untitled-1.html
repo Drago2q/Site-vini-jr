@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style> /* Define informações de estilo para um documento*/
+    .tab {
+    /*Especifica o que acontece se o conteúdo transbordar a caixa de um elemento*/
+  overflow: hidden;
+  
+  /*Uma propriedade abreviada para largura de borda, estilo de borda e cor de borda*/
+  border: 1px solid #ccc;
+
+  /*Cor de Fundo*/
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+
+  /*Especifica se um elemento deve flutuar para a esquerda, direita ou não deve flutuar*/
+  float: left;
+
+  border: none;
+
+  /*Uma propriedade abreviada para as propriedades de largura de contorno, estilo de estrutura de tópicos e cor de contorno*/
+  outline: none;
+
+  cursor: pointer;
+
+  /*Uma propriedade abreviada para todas as propriedades de preenchimento*/
+  padding: 14px 16px;
+
+  /*Uma propriedade abreviada para todas as propriedades de transição*/
+  transition: 0.3s;
+
+  /*tamanho da fonte*/
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+
+  /*Especifica como um determinado elemento HTML deve ser exibido*/
+  display: none;
+
+  padding: 6px 12px;
+
+  border: 1px solid #ccc;
+
+  border-top: none;
+}
+body {margin: 0;}
+
+/*Define uma lista não ordenada*/
+ul.topnav {
+
+  /*Especifica o tipo de marcador de item da lista*/
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+
+  color: white;
+
+  /*Especifica o alinhamento horizontal do texto*/
+  text-align: center;
+
+  padding: 14px 16px;
+
+  /*Especifica a decoração adicionada ao texto*/
+  text-decoration: none;
+}
+
+/*Quando não estiver selecionado o fundo fica preto*/
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+/*Quando estiver selecionado o fundo fica verde*/
+ul.topnav li a.active {background-color: #04AA6D;}
+
+/*Define um item da lista*/
+ul.topnav li.right {float: right;}
+
+/*Define as regras de estilo para diferentes tipos de mídia, dispositivos e tamanhos*/
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body>
+
+<ul class="topnav">
+    <li><a href="#camisa"><img src="Imagens/Maillot-Real-Madrid-Domicile-2023-2024-Vini-Jr-2-768x768-removebg-preview.png" alt="vini jr" width="40"></a></li>
+  <li><a class="active" href="#Inicio">Inicio</a></li>
+  <li><a href="https://www.instagram.com/vinijr/" target="_blank">Instagram</a></li>
+  <li><a href="https://institutovinijr.org.br/" target="_blank">InstitutoViniJR</a></li>
+  <li class="right"><a href="https://pt.wikipedia.org/wiki/Vin%C3%ADcius_J%C3%BAnior" target="_blank">Sobre</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+  <h2>Bem vindo!</h2>
+  <p>Este é um site sobre o Vini JR</p>
+  <p>Se quiser saber mais, clique nos botões acima</p>
+</div>
+
+</body>
+</html>
+
+
